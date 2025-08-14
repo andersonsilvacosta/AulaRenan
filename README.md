@@ -12,3 +12,8 @@ Anotações aulas Professor Renan
 11. Deletar a branch antiga da maquina
 12. Loop - Volte ao passo 4
 
+SINCRONIZAR OU FAZER UM PULL
+
+Comando para deletar a Branch, caso você tenha criado os arquivos sem antes sincronizar na MAIN
+git branch - feat-css
+
