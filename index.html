@@ -1,71 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML</title>
+    <link rel="stylesheet" href="./style/index.css">
 </head>
+
 <body>
- <!-- cabeçalho -->
-  <header>
-    Minha 1° Página HTML
-</header>
-<a href="pagina.html">PAGINA</a>
-<!-- conteudo da página -->
-<H1>
+    <script src="caminho/do/arquivo.js"></script>
+    <!-- cabecalho -->
+     
+    <header id="header">
+        <h1> minha primeira pagina HTML </h1>
+        <a href="./newpage.html">New page</a>
+    </header>
 
-</H1>
-<main>
-       <section>
-        <h2>Seção de listas</h2>
-       <h3> lista NÃO ordenada </h3>
-        <ul>
-            <li>iten 1</li>
-            <li>iten 2</li>
-            <li>iten 3</li>
-        </ul>
-        <h3>Lista Ordenada</h3>
-        <ol>
-            <li>primeiro item</li>
-            <li>segundo item</li>
-            <li>terceiro item</li>
-        </ol>
-       
-       
-       </section>
-<section>
-    <h2>Imagens e vídeos</h2>
-    <figure>
-   <img src="https://images8.alphacoders.com/135/thumb-1920-1355096.jpeg" alt=""width="600">
-    </figure>
-     <h3> Vídeo</h3>
-   <iframe width="772" height="435" src="https://www.youtube.com/embed/UKdQggxiPpE" title="Suzuki Hayabusa 2025 CHOCOU o mundo – Você não vai acreditar no que eles fizeram!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</section>
-<section>
-    <h2>Formulario Simples</h2>
-    <form> 
-        <div><label for="NOME">NOME</label></div>
-        <input type="text" name="" id="nome">
-        <div>  <label for="email">EMAIL</label> </div>
-       <input type="email" name="" id="email">
-       
-<div><label for="mensagem">MENSAGEM</label></div>
+    <!-- conteudo da pagina -->
+    <main>
+        <section>
+            <h2 id="exemplo-get">Seção de listas: </h2>
+            <h3>Lista nao ordenada:</h3>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <h3>Lista ordenada</h3>
+            <ol>
+                <li>Primeiro item</li>
+                <li>Segundo item</li>
+                <li>Terceiro item</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Imagens e Videos</h2>
+            <figure>
+                <img src="https://itpetblog.com.br/wp-content/uploads/2019/07/caes-na-praia.jpg"
+                    alt="Imagem de um cachorro na praia" width="450" height="300">
+            </figure>
+            <h3>Video</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GyBtXKq_zoI?si=Edh_JMF_eCW-vSlI"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section class="last">
+            <h2>Formulário Simples</h2>
+            <form>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem"></textarea>
+                </div>
+                <div>
+                    <label for="idade">Idade:</label>
+                    <input type="number" name="idade" id="idade" min="1" max="100">
+                </div>
+                <div>
+                    <label for="cor">Cor:</label>
+                    <input type="color" name="cor" id="cor">
+                </div>
+                <div>
+                    <label for="anexo">Anexo:</label>
+                    <input type="file" name="anexo" id="anexo">
+                </div>
 
-<label for="idade">IDADE</label>
-<input type="number" name="" id="idade" min="18" max="36">
+                <button type="submit">Enviar</button>
+                <button id="buttonExemploJS" type="button">Exemplo JS</button>
 
-<div> </div>
-<label for="cor">COR</label>
-<input type="color" name="" id="">
-<div> 
-    <label for="ANEXO">ANEXO</label>
-    <input type="file" name="" id="">
-</div>
-<div>
-    <button type="submit">ENVIAR</button>
-</div>
-</form>
-</section>
-   </main>
+            </form>
+        </section>
+
+    </main>
+
+
+    <!-- rodapé -->
+    <footer id="footer">
+        <P>
+            Minha primeira pagina - &copy; Todos os direitos reservados
+        </P>
+    </footer>
+    
+
 </body>
+
 </html>
